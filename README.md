@@ -8,7 +8,7 @@ The current version installed is Big Sur 11.1 with OpenCore 0.6.5. Catalina was 
 
 I use Macmini8,1 as my SMBIOS. iMac18,1 is also a good alternative if you wish to use it.
 
-This was setup using the Dell BIOS: [1.13.0](https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=80chv&oscode=wt64a&productcode=optiplex-7050-desktop)
+This was setup using the Dell BIOS: 1.13.0 (Newest one, that i havent tested yet, can be found here: https://www.dell.com/support/home/de-de/drivers/driversdetails?driverid=jkt52&oscode=wt64a&productcode=optiplex-7050-desktop)
 
 This has mostly been created with the help of the above mentioned setup from [linkev](https://github.com/linkev/Dell-Optiplex-7050-Micro-Hackintosh)
 
