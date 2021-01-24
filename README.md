@@ -1,16 +1,16 @@
-# Dell Optiplex 7050 Micro OpenCore 0.6.5
+# Dell Optiplex 7050 SFF OpenCore 0.6.5
 
-![Optiplex Showoff](images/main.jpeg)
+THX to [linkev](https://github.com/linkev/Dell-Optiplex-7050-Micro-Hackintosh) for his wonderfull work. 
 
-This repository contains my personal EFI configuration for the fantastic Dell Optiplex 7050 Micro.
+This repository contains my opencore conf for the Dell Optiplex 7050 SFF.
 
-The current version installed is Big Sur 11.1 (20C69) with OpenCore 0.6.5. Catalina was installed prior to Big Sur and it worked perfectly.
+The current version installed is Big Sur 11.1 with OpenCore 0.6.5. Catalina was installed prior to Big Sur and it worked perfectly.
 
 I use Macmini8,1 as my SMBIOS. iMac18,1 is also a good alternative if you wish to use it.
 
-This was setup using the latest Dell BIOS: [1.14.0](https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=80chv&oscode=wt64a&productcode=optiplex-7050-desktop)
+This was setup using the Dell BIOS: [1.13.0](https://www.dell.com/support/home/en-tc/drivers/driversdetails?driverid=80chv&oscode=wt64a&productcode=optiplex-7050-desktop)
 
-This has mostly been created with the help of the [Vanilla Hackintosh Guide by Dortania](https://dortania.github.io/OpenCore-Install-Guide/) and my own personal experience.
+This has mostly been created with the help of the above mentioned setup from [linkev](https://github.com/linkev/Dell-Optiplex-7050-Micro-Hackintosh)
 
 **MAKE SURE YOU ADD YOUR SYSTEM SERIAL NUMBER, SYSTEM UUID, MLB AND ROM IN PLATFORMINFO BEFORE BOOTING!**
 
@@ -23,9 +23,7 @@ You may also need to remove the AirportBrcmFixup.kext, BrcmBluetoothInjector.kex
 - Intel i7-7700 CPU (Not the T version, the full desktop 65W version)
 - 16GB RAM DDR4 Samsung 2666 MHz, but running at 2400 MHz, because Intel limits the speed
 - Intel HD Graphics 630 1536 MB
-- Sabrent Rocket 512GB in the NVMe slot
-- Samsung 860 QVO 1TB in the SATA slot
-- Dell DW1820A 802.11ac WiFi + Bluetooth 4.1 LE
+- MZ-V7S500BW 970 EVO Plus 500 GB in the NVMe slot
 - Intel I219-LM Gigabit Ethernet
 - Integrated speaker at the front, works perfectly with `alcid=11`
 - 1 Displayport 1.2
@@ -34,7 +32,7 @@ You may also need to remove the AirportBrcmFixup.kext, BrcmBluetoothInjector.kex
 - 1 USB-C Port and 1 USB-A port at the front
 - 1 headphone jack and 1 microphone port at the front
 - 4 USB-A ports at the back
-- 130 watt Dell power supply
+- 180 watt Dell power supply
 
 ## What works and what doesn't
 
@@ -47,31 +45,24 @@ You may also need to remove the AirportBrcmFixup.kext, BrcmBluetoothInjector.kex
 - [x] All USB ports at their max speed (manually mapped)
 - [x] Gigabit Ethernet
 - [x] Secure Boot
-- [x] WiFi and Bluetooth (I use DW1820A, but the included Intel chips may work with [OpenIntelWireless](https://github.com/OpenIntelWireless/itlwm))
+- [ ] waiting for my wifi to arrive
 - [x] Location Services
 - [x] Onboard Audio + Integrated Speaker at the front
 - [x] iMessage (set your Serial Number, UUID and MLB correctly)
 - [x] All iCloud Services
 - [x] App Store
 - [x] FaceTime
-- [x] Handoff
-- [x] Unlock with Apple Watch
 - [x] AirDrop
 - [x] AirPlay
 - [x] Continuity
 - [x] DRM:
-  - iTunes Movies (FairPlay 1)
-  - Netflix (FairPlay 2/3)
-  - Amazon Prime (FairPlay 2/3)
-  - Apple TV+ (FairPlay 4)
+  - Amazon Prime
+  - no other tested
 - [x] NVRAM
 - [x] FileVault
 - [x] Dell Sensors (Fans/Temperature)
 - [x] Built in Displayport 1.4 and HDMI 1.2
 - [x] TRIM working on Sabrent NVMe
-- [x] TRIM enabled for SATA SSD with `sudo trimforce enable`
-- [x] Sidecar
-- [x] Various sharing functions like Content Caching (very useful if you have lots of Apple devices)
 - [x] Time Machine
 - [x] Seamless software updates
 
