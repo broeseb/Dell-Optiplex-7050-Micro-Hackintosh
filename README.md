@@ -44,7 +44,7 @@ You may also need to remove the AirportBrcmFixup.kext, BrcmBluetoothInjector.kex
 - [x] Video encoder/decoder hardware
 - [x] All USB ports at their max speed (manually mapped)
 - [x] Gigabit Ethernet
-- [x] Secure Boot
+- [ ] Secure Boot
 - [ ] waiting for my wifi to arrive
 - [x] Location Services
 - [x] Onboard Audio + Integrated Speaker at the front
