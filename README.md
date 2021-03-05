@@ -45,7 +45,7 @@ You may also need to remove the AirportBrcmFixup.kext, BrcmBluetoothInjector.kex
 - [x] All USB ports at their max speed (manually mapped)
 - [x] Gigabit Ethernet
 - [ ] Secure Boot
-- [ ] waiting for my wifi to arrive
+- [x] FV-HB1200 1200Mbps (works perfekt)
 - [x] Location Services
 - [x] Onboard Audio + Integrated Speaker at the front
 - [x] iMessage (set your Serial Number, UUID and MLB correctly)
@@ -61,8 +61,7 @@ You may also need to remove the AirportBrcmFixup.kext, BrcmBluetoothInjector.kex
 - [x] NVRAM
 - [x] FileVault
 - [x] Dell Sensors (Fans/Temperature)
-- [x] Built in Displayport 1.4 and HDMI 1.2
-- [x] TRIM working on Sabrent NVMe
+- [x] Built in HDMI 1.2
 - [x] Time Machine
 - [x] Seamless software updates
 
